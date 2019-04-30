@@ -97,7 +97,7 @@ nav li:hover {
     height: 175px;
     position: absolute;
     bottom: 0;
-    background-image: linear-gradient(to bottom right, rgba(180,180,180, .5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to bottom right, rgba(180,180,180, .5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
     opacity: .3;
 }
 
