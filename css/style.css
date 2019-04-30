@@ -92,6 +92,15 @@ nav li:hover {
     position: relative;
 }
 
+.head-floor {
+    width: 100%;
+    height: 175px;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom right, rgba(180,180,180, .5), rgba(255, 255, 255, 0));
+    opacity: .35;
+}
+
 #head .container {
     position: relative;
     transform: translateY(-50%);
@@ -139,6 +148,7 @@ nav li:hover {
     cursor: pointer;
     transition: .7s;
     letter-spacing: 3px;
+    background: transparent;
 }
 
 .button-cta:hover {
