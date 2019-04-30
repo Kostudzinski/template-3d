@@ -17,6 +17,22 @@ a {
     transition: .7s;
 }
 
+h2 {
+    padding: 80px 0px 0px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+
+*::-moz-selection {
+    color: #fff;
+    background: #23A1E9;
+}
+
+*::selection {
+    color: #fff;
+    background: #23A1E9;
+}
+
 
 /*NAV*/
 
@@ -24,9 +40,13 @@ nav {
     width: 100vw;
     height: 60px;
     position: fixed;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e1e1e1;
     z-index: 5;
-    /*    background: rgba(255,255,255, .6);*/
+    transition: .7s;
+}
+
+.nav-back {
+    background: rgba(255, 255, 255, .6);
 }
 
 nav>.container {
@@ -35,7 +55,7 @@ nav>.container {
 }
 
 .nav-logo {
-    width: 150px;
+    width: 190px;
     height: 100%;
     background-image: url(../img/logo.png);
     background-size: contain;
@@ -59,7 +79,7 @@ nav li {
 }
 
 nav li:hover {
-    color: #81d1f9;
+    color: #23A1E9;
 }
 
 
@@ -68,14 +88,17 @@ nav li:hover {
 #head {
     width: 100vw;
     height: 100vh;
-    background-image: linear-gradient(to right, #e6e6e6, #fff, #e6e6e6);
+    background-image: linear-gradient(to right, #e1e1e1, #fff, #e1e1e1);
     position: relative;
 }
 
-.container-flex {
+#head .container {
     position: relative;
     transform: translateY(-50%);
     top: 55%;
+}
+
+.container-flex {
     display: flex;
 }
 
@@ -112,14 +135,14 @@ nav li:hover {
     padding: 15px 50px;
     font-size: 15px;
     border-radius: 50px;
-    border: 2px solid #81d1f9;
+    border: 2px solid #23A1E9;
     cursor: pointer;
     transition: .7s;
     letter-spacing: 3px;
 }
 
 .button-cta:hover {
-    background: #81d1f9;
+    background: #23A1E9;
     color: #fff;
 }
 
@@ -129,10 +152,38 @@ nav li:hover {
 #features {
     width: 100vw;
     background: #fff;
+    margin-top: 50px;
 }
 
-#features .container {
-    display: flex;
+.desc-text p {
+    margin: 0px 20px 80px;
+    text-align: justify;
+}
+
+.blue-line {
+    width: 40px;
+    height: 2px;
+    background: #23A1E9;
+    margin: 10px 20px;
+}
+
+.cross-text-up {
+    top: -20px;
+    right: 0;
+}
+
+.cross-text-down {
+    bottom: -20px;
+    left: 0;
+}
+
+.dim-img {
+    padding-left: 10px;
+    width: 46%;
+}
+
+.container-reverse {
+    flex-direction: row-reverse;
 }
 
 .feat-text {
@@ -151,14 +202,14 @@ nav li:hover {
 
 .feat-text li {
     padding: 20px 0;
-    border-bottom: 1px solid #e6e6e6;
+    border-bottom: 1px solid #e1e1e1;
     position: relative;
     cursor: pointer;
     transition: .7s;
 }
 
 .feat-text li:hover {
-    color: #81d1f9;
+    color: #23A1E9;
 }
 
 #features img {
@@ -176,16 +227,19 @@ nav li:hover {
 
 .cross {
     position: absolute;
-    bottom: 15px;
-    right: 10px;
     transform: rotate(45deg);
     cursor: pointer;
+}
+
+.cross-li {
+    bottom: 15px;
+    right: 10px;
 }
 
 .crossed {
     width: 2px;
     height: 20px;
-    background: #81d1f9;
+    background: #23A1E9;
 }
 
 .cross-left {
@@ -195,4 +249,118 @@ nav li:hover {
 
 .cross-right {
     transform: rotate(-45deg)
+}
+
+.cross-gray {
+    background: #e1e1e1;
+    transition: .7s;
+}
+
+.desc-text:hover .cross-gray {
+    background: #23A1E9;
+}
+
+span {
+    transition: .7s;
+}
+
+.desc-text:hover span {
+    color: #23A1E9;
+}
+
+
+/*BANNER*/
+
+#banner {
+    background: #f3f3f3;
+    padding-bottom: 120px;
+}
+
+#banner .container {
+    position: relative;
+}
+
+#banner img {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.banner-text {
+    width: 70%;
+    margin: auto;
+}
+
+.banner-text p {
+    padding-left: 20px;
+}
+
+.banner-img {
+    position: relative;
+}
+
+.img-cross {
+    bottom: 0;
+}
+
+.img-cross-r {
+    right: 0;
+}
+
+
+/*CTA*/
+
+#cta {
+    width: 100vw;
+    height: 200px;
+    background-image: linear-gradient(#4dbdfd, #23A1E9)
+}
+
+#cta .container {
+    position: relative;
+    height: 100%;
+}
+
+#cta img {
+    width: 44%;
+    position: absolute;
+    left: 7%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cta-text {
+    position: absolute;
+    left: 55%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.cta-text h2 {
+    color: #fff;
+    padding-top: 0;
+}
+
+.cta-text button {
+    background: #fff;
+    border: 2px solid #fff;
+    color: #23A1E9;
+    margin-top: 25px;
+}
+
+.cta-text button:hover {
+    background: #23A1E9;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.cta-text .blue-line {
+    background: #e1e1e1;
+}
+
+
+/*SPECIFICATION*/
+
+#specification {
+    margin-top: 50px;
 }
