@@ -10,7 +10,7 @@ $(window).scroll(function () {
 });
 
 function navBack() {
-    if ($(window).scrollTop() >= 10) {
+    if ($(window).scrollTop() >= 50) {
 
         $('nav').addClass('nav-back')
 
