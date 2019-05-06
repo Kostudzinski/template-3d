@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-back {
-    background: rgba(255, 255, 255, .6);
+    background: rgba(255, 255, 255, .7);
 }
 
 nav>.container {
@@ -97,7 +97,7 @@ nav li:hover {
     height: 175px;
     position: absolute;
     bottom: 0;
-    background-image: linear-gradient(to bottom right, rgba(180,180,180, .5), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    background-image: linear-gradient(to bottom right, rgba(180, 180, 180, .4), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
     opacity: .45;
 }
 
@@ -135,6 +135,7 @@ nav li:hover {
 
 .head-text {
     padding-left: 35px;
+    position: relative;
 }
 
 
@@ -162,7 +163,9 @@ nav li:hover {
 #features {
     width: 100vw;
     background: #fff;
-    margin-top: 50px;
+    padding-top: 50px;
+    position: relative;
+    z-index: 1;
 }
 
 .desc-text p {
@@ -171,10 +174,15 @@ nav li:hover {
 }
 
 .blue-line {
-    width: 40px;
+    width: 0px;
     height: 2px;
     background: #23A1E9;
     margin: 10px 20px;
+    transition: 1s;
+}
+
+.blue-line-on {
+    width: 40px;
 }
 
 .cross-text-up {
@@ -187,9 +195,27 @@ nav li:hover {
     left: 0;
 }
 
-.dim-img {
-    padding-left: 10px;
+.dim-con {
     width: 46%;
+    height: auto;
+    position: relative;
+}
+
+.dim-item {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    transition: .7s;
+}
+
+.dim-img {
+    background-image: url(../img/dim-soon.png);
+}
+
+.dim-cube {
+    background-image: url(../img/dim-cube.png);
+    opacity: 0;
 }
 
 .container-reverse {
@@ -199,6 +225,17 @@ nav li:hover {
 .feat-text {
     width: 50%;
     position: relative;
+}
+
+.par-open {
+    font-size: 14px;
+    margin: 20px;
+    text-align: justify;
+    display: none;
+}
+
+.display {
+    display: block;
 }
 
 .feat-text ul {
@@ -214,18 +251,31 @@ nav li:hover {
     padding: 20px 0;
     border-bottom: 1px solid #e1e1e1;
     position: relative;
-    cursor: pointer;
     transition: .7s;
 }
 
-.feat-text li:hover {
+.list-item {
+    transition: .7s;
+    width: 75%;
+    cursor: pointer;
+}
+
+.list-item:hover {
     color: #23A1E9;
 }
 
-#features img {
+.li-img {
     width: 50%;
-    height: 100%;
+    height: 95vh;
     position: relative;
+}
+
+.img-li {
+    height: 100%;
+    width: 100%;
+    background-size: contain;
+    position: absolute;
+    background-repeat: no-repeat;
 }
 
 .feat-img>img {
@@ -238,12 +288,22 @@ nav li:hover {
 .cross {
     position: absolute;
     transform: rotate(45deg);
+    transition: .7s;
+}
+
+.rotate {
+    transform: rotate(0deg);
+}
+
+.cross-point {
     cursor: pointer;
 }
 
 .cross-li {
-    bottom: 15px;
+    top: 25px;
     right: 10px;
+    z-index: 10;
+    cursor: pointer;
 }
 
 .crossed {
@@ -276,6 +336,14 @@ span {
 
 .desc-text:hover span {
     color: #23A1E9;
+}
+
+.mydiv {
+    display: none;
+}
+
+.no-display {
+    display: none;
 }
 
 
@@ -373,4 +441,80 @@ span {
 
 #specification {
     margin-top: 50px;
+}
+
+.tech-header {
+    width: max-content;
+    margin: auto;
+    padding-top: 20px;
+}
+
+.tech-row {
+    display: flex;
+    margin-top: 40px;
+}
+
+.second-row {
+    margin: 30px 100px;
+}
+
+.tech-feature {
+    flex: 1;
+    position: relative;
+}
+
+.tech-feature p {
+    text-align: center;
+    font-size: 18px;
+    margin: 20px;
+}
+
+.tech-feature p:nth-child(2) {
+    font-weight: 900;
+}
+
+.tech-line {
+    width: 200px;
+    height: 2px;
+    background: #e1e1e1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+
+/*FOOTER*/
+
+footer {
+    margin-top: 80px;
+    background-color: #282a2b;
+    border-color: #4b4c4d;
+    border-top-width: 1px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+footer .container {
+    position: relative;
+}
+
+footer span {
+    color: #e1e1e1;
+    font-size: 14px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 14px;
+}
+
+.arrow {
+    width: 40px;
+    height: 40px;
+    background: url(../img/arrow.png);
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    cursor: pointer;
 }
