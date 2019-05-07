@@ -43,7 +43,7 @@
     }
     .dim-con {
         width: 100%;
-        height: -webkit-fill-available;
+        height: 200vh;
     }
     .li-img {
         width: 100%;
