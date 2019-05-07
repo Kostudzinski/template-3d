@@ -48,9 +48,9 @@ function scrollSlow() {
 
 function dim() {
     var scrollBottom = $(window).scrollTop() + $(window).height();
-    if (scrollBottom >= ($(".dim-img").offset().top) + 320) {
+    if (scrollBottom >= ($(".dim-img").offset().top) + 390) {
         $('.dim-img').css({
-            'opacity': '.2'
+            'opacity': '.3'
         });
 
         $('.dim-cube').css({
