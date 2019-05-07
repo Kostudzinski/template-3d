@@ -205,7 +205,9 @@ nav li:hover {
     position: absolute;
     height: 100%;
     width: 100%;
-    background-size: cover;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
     transition: .7s;
 }
 

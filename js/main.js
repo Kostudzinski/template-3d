@@ -7,7 +7,7 @@ $(document).ready(function () {
 
 $(window).scroll(function () {
     navBack();
-//    parallax();
+    //    parallax();
     dim();
     line();
 });
@@ -123,10 +123,10 @@ function changePhoto() {
 };
 
 //function changePhoto() {
-//    $('.list-item, .cross').click(function () {
+//    $('.list-item, cross-li').click(function () {
 //        var parent = $(this).parents('.li-open');
 //        $('#main-li-img').addClass('no-display');
-//        var myvar = parent.id;
+//        var myvar = parent.attr('id');
 //        $("div.mydiv").hide();
 //        $('#div' + myvar).show();
 //    });
