@@ -29,7 +29,7 @@
         padding-left: 0px;
     }
     #head {
-        height: 105vh;
+        height: 130vh;
     }
     .head-text-con>h1 {
         margin: 10px 0 30px;
@@ -43,7 +43,7 @@
     }
     .dim-con {
         width: 100%;
-        height: 50vh;
+        height: -webkit-fill-available;
     }
     .li-img {
         width: 100%;
