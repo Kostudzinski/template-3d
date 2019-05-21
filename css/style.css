@@ -481,9 +481,9 @@ span {
     height: 2px;
     background: #e1e1e1;
     position: absolute;
-    top: 50%;
+    top: 50px;
     left: 50%;
-    transform: translate(-50%);
+    transform: translateX(-50%);
 }
 
 

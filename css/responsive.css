@@ -58,6 +58,9 @@
     .tech-row {
         display: block;
     }
+    .tech-line {
+        top: 30px;
+    }
     .tech-feature {
         margin-top: 50px;
     }
