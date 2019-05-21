@@ -393,7 +393,8 @@ span {
 #cta {
     width: 100vw;
     height: 200px;
-    background-image: linear-gradient(#4dbdfd, #23A1E9)
+    background-image: linear-gradient(#4dbdfd, #23A1E9);
+    margin-top: 80px;
 }
 
 #cta .container {
@@ -404,14 +405,14 @@ span {
 #cta img {
     width: 44%;
     position: absolute;
-    left: 7%;
+    left: 50%;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .cta-text {
     position: absolute;
-    left: 55%;
+    left: 10%;
     top: 50%;
     transform: translateY(-50%);
 }
