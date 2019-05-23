@@ -67,31 +67,27 @@ function dim() {
     };
 };
 
-//function line() {
-//    var scrollBottom = $(window).scrollTop() + $(window).height();
-//    if (scrollBottom >= ($(".blue-first").offset().top) + 50) {
-//        $('.blue-first').addClass('blue-line-on');
-//    }
-//    if (scrollBottom >= ($(".blue-second").offset().top) + 50) {
-//        $('.blue-second').addClass('blue-line-on');
-//    }
-//    if (scrollBottom >= ($(".blue-third").offset().top) + 50) {
-//        $('.blue-third').addClass('blue-line-on');
-//    }
-//
-//    if (scrollBottom >= ($(".blue-fourth").offset().top) + 50) {
-//        $('.blue-fourth').addClass('blue-line-on');
-//    }
-//};
-
 function line() {
-    $('.blue-line').each(function () {
-        var scrollBottom = $(window).scrollTop() + $(window).height();
-        if (scrollBottom >= ($(".blue-line").offset().top) + 50) {
-            $(this).addClass('blue-line-on');
-        }
-    })
-}
+    var scrollBottom = $(window).scrollTop() + $(window).height();
+    if (scrollBottom >= ($(".blue-first").offset().top) + 50) {
+        $('.blue-first').addClass('blue-line-on');
+    }
+    if (scrollBottom >= ($(".blue-second").offset().top) + 50) {
+        $('.blue-second').addClass('blue-line-on');
+    }
+    if (scrollBottom >= ($(".blue-third").offset().top) + 50) {
+        $('.blue-third').addClass('blue-line-on');
+    }
+};
+
+//function line() {
+//    $('.blue-line').each(function () {
+//        var scrollBottom = $(window).scrollTop() + $(window).height();
+//        if (scrollBottom >= ($(".blue-line").offset().top) + 50) {
+//            $(this).addClass('blue-line-on');
+//        }
+//    })
+//}
 
 
 function navBack() {

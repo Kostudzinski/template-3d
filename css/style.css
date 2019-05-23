@@ -125,6 +125,12 @@ nav li:hover {
     top: 50%;
 }
 
+.head-text-con p {
+    font-size: 50px;
+    margin-bottom: 30px;
+    letter-spacing: 3px;
+}
+
 .head-text-con>h1 {
     margin: 10px 0 50px;
 }
@@ -217,6 +223,24 @@ nav li:hover {
 
 .dim-cube {
     background-image: url(../img/dim-cube.png);
+    opacity: 0;
+}
+
+.dim-img-guider {
+    background-image: url(../img/dim-soon-guider.png);
+}
+
+.dim-cube-guider {
+    background-image: url(../img/dim-cube-guider.png);
+    opacity: 0;
+}
+
+.dim-img-creator {
+    background-image: url(../img/dim-soon-creator.png);
+}
+
+.dim-cube-creator {
+    background-image: url(../img/dim-cube-creator.png);
     opacity: 0;
 }
 
@@ -394,7 +418,7 @@ span {
     width: 100vw;
     height: 200px;
     background-image: linear-gradient(#4dbdfd, #23A1E9);
-    margin-top: 80px;
+    margin-top: 100px;
 }
 
 #cta .container {
@@ -405,14 +429,14 @@ span {
 #cta img {
     width: 44%;
     position: absolute;
-    left: 50%;
+    left: 47%;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .cta-text {
     position: absolute;
-    left: 10%;
+    left: 12%;
     top: 50%;
     transform: translateY(-50%);
 }
