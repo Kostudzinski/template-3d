@@ -106,7 +106,6 @@ nav li:hover {
 }
 
 .floor-header {
-    bottom: -175px;
     z-index: 1;
 }
 
@@ -154,9 +153,9 @@ nav li:hover {
 }
 
 .logo-img {
-    width: 40vw;
+    width: 20vw;
     margin: auto;
-    padding-top: 100px;
+    padding-top: 72px;
 }
 
 .logo-img>img {
@@ -165,9 +164,9 @@ nav li:hover {
 
 .heading {
     text-align: center;
-    letter-spacing: 3px;
-    font-size: 34px;
-    margin-top: 15px;
+    letter-spacing: 4px;
+    font-size: 25px;
+    margin-top: 10px;
 }
 
 .printer-flex {
@@ -181,11 +180,16 @@ nav li:hover {
 }
 
 .printer-flex h2 {
-    padding-top: 0;
+    padding: 0px;
 }
 
 .printer-flex p {
     margin: 10px;
+}
+
+.text-button-cont {
+    position: relative;
+    top:-20px;
 }
 
 
@@ -208,7 +212,7 @@ nav li:hover {
 }
 
 .button-printer {
-    margin: 20px 0 50px;
+    margin: 5px 0 50px;
 }
 
 
