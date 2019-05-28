@@ -172,6 +172,7 @@ nav li:hover {
     margin: auto;
     margin-top: 6px;
     position: relative;
+    text-transform: uppercase;
 /*    font-style: italic;*/
 }
 
