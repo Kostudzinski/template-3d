@@ -137,8 +137,8 @@ nav li:hover {
 
 .head-text-con p {
     font-size: 50px;
-    margin-bottom: 30px;
     letter-spacing: 3px;
+    margin-bottom: 10px;
 }
 
 .head-text-con>h1 {
@@ -173,7 +173,7 @@ nav li:hover {
     margin-top: 6px;
     position: relative;
     text-transform: uppercase;
-/*    font-style: italic;*/
+    /*    font-style: italic;*/
 }
 
 .printer-flex {
@@ -274,6 +274,11 @@ nav li:hover {
     left: 50%;
     transform: translateX(-50%);
     background: #23A1E9;
+}
+
+.line-printer-head {
+    width: 40px;
+    margin-top: 1px;
 }
 
 .blue-line-on {
