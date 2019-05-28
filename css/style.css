@@ -195,7 +195,7 @@ nav li:hover {
 
 .text-button-cont {
     position: relative;
-    top: -20px;
+    top: -25px;
 }
 
 .sub-header {
@@ -203,6 +203,7 @@ nav li:hover {
     width: 400px;
     margin: auto;
     margin-top: 6px;
+    margin-bottom: 5px;
 }
 
 
