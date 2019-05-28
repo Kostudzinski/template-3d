@@ -107,6 +107,8 @@ nav li:hover {
 
 .floor-header {
     z-index: 1;
+    background-image: linear-gradient(to bottom left, rgba(180, 180, 180, .4), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0));
+    bottom: -35px;
 }
 
 #head .container {
@@ -155,7 +157,7 @@ nav li:hover {
 .logo-img {
     width: 20vw;
     margin: auto;
-    padding-top: 72px;
+    padding-top: 70px;
 }
 
 .logo-img>img {
@@ -164,9 +166,13 @@ nav li:hover {
 
 .heading {
     text-align: center;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     font-size: 25px;
-    margin-top: 10px;
+    width: max-content;
+    margin: auto;
+    margin-top: 6px;
+    position: relative;
+/*    font-style: italic;*/
 }
 
 .printer-flex {
@@ -176,7 +182,7 @@ nav li:hover {
 }
 
 .printer-flex img {
-    width: 100%;
+    width: 90%;
 }
 
 .printer-flex h2 {
@@ -189,7 +195,14 @@ nav li:hover {
 
 .text-button-cont {
     position: relative;
-    top:-20px;
+    top: -20px;
+}
+
+.sub-header {
+    text-align: center;
+    width: 400px;
+    margin: auto;
+    margin-top: 6px;
 }
 
 
@@ -204,6 +217,7 @@ nav li:hover {
     transition: .7s;
     letter-spacing: 3px;
     background: transparent;
+    min-width: 200px;
 }
 
 .button-cta:hover {
@@ -213,6 +227,18 @@ nav li:hover {
 
 .button-printer {
     margin: 5px 0 50px;
+}
+
+.button-shop {
+    margin: 10px 0 5px;
+    border: 2px solid #23A1E9;
+    background: #23A1E9;
+    color: #fff;
+}
+
+.button-shop:hover {
+    background: none;
+    color: #23A1E9;
 }
 
 
@@ -237,6 +263,15 @@ nav li:hover {
     background: #23A1E9;
     margin: 10px 20px;
     transition: 1s;
+}
+
+.line-header {
+    width: 80px;
+    margin: 7px 0px 8px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #23A1E9;
 }
 
 .blue-line-on {
