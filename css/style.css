@@ -44,7 +44,7 @@ nav {
     z-index: 5;
     transition: .7s;
     opacity: 0;
-    animation: intro-nav 1s linear 1.2s forwards;
+    animation: intro-nav 1s linear 2.4s forwards;
 }
 
 .nav-back {
@@ -172,15 +172,38 @@ nav li:hover {
 }
 
 .logo-img {
-    width: 30vw;
+    width: 300px;
     margin: auto;
-    padding-top: 100px;
-    opacity: 0;
-    animation: intro-logo 1.2s ease-in-out .5s forwards;
+    padding-top: 150px;
+    position: relative;
+    /*    opacity: 0;*/
+    /*    animation: intro-logo 1.2s linear .5s forwards;*/
 }
 
-.logo-img>img {
-    width: 100%;
+.trick {
+    width: 85%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.trick-text {
+    opacity: 0;
+    bottom: -125px;
+    z-index: 10;
+    animation: intro-trick-text 1.6s linear .2s forwards;
+}
+
+.trick-overflow {
+    width: 85px;
+    height: 85px;
+    position: absolute;
+    overflow: hidden;
+    top: 165px;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: intro-trick-over 1.5s linear .2s forwards;
 }
 
 .heading {
@@ -189,12 +212,12 @@ nav li:hover {
     font-size: 25px;
     width: max-content;
     margin: auto;
-    margin-top: 6px;
+    margin-top: 9px;
     position: relative;
     text-transform: uppercase;
     /*    font-style: italic;*/
     opacity: 0;
-    animation: intro-nav 1s linear 1.8s forwards;
+    animation: intro-nav 1s linear 2s forwards;
 }
 
 .printer-flex {
@@ -203,7 +226,8 @@ nav li:hover {
     text-align: center;
     opacity: 0;
     position: relative;
-    animation: intro-nav 1s linear 1.2s forwards;
+    margin-top: 40px;
+    animation: intro-nav 1s linear 1.7s forwards;
 }
 
 .printer-flex img {
@@ -230,7 +254,7 @@ nav li:hover {
     margin-top: 6px;
     margin-bottom: 5px;
     opacity: 0;
-    animation: intro-nav 1s linear 1.8s forwards;
+    animation: intro-nav 1s linear 2s forwards;
 }
 
 
@@ -274,15 +298,15 @@ nav li:hover {
 }
 
 .glow-a {
-    animation: glow 7.5s linear 3.1s infinite;
+    animation: glow 7.5s linear 4.1s infinite;
 }
 
 .glow-c {
-    animation: glow 7.5s linear 2.8s infinite;
+    animation: glow 7.5s linear 3.8s infinite;
 }
 
 .glow-g {
-    animation: glow 7.5s linear 2.5s infinite;
+    animation: glow 7.5s linear 3.5s infinite;
 }
 
 
@@ -357,7 +381,7 @@ nav li:hover {
     left: 50%;
     transform: translateX(-50%);
     background: #23A1E9;
-    animation: intro-line .6s linear 1.6s forwards;
+    animation: intro-line .6s linear 1.7s forwards;
 }
 
 .line-printer-head {
@@ -740,22 +764,18 @@ footer p {
 @keyframes intro-logo {
     0% {
         opacity: 0;
-        padding-top: 70px;
         width: 30vw;
     }
     30% {
         opacity: 1;
-        padding-top: 70px;
         width: 30vw;
     }
     65% {
         opacity: 1;
-        padding-top: 70px;
         width: 20vw;
     }
     100% {
         opacity: 1;
-        padding-top: 70px;
         width: 20vw;
     }
 }
@@ -787,5 +807,43 @@ footer p {
     }
     100% {
         left: -360px;
+    }
+}
+
+@keyframes intro-trick-over {
+    0% {
+        opacity: 0;
+        height: 85px;
+    }
+    30% {
+        opacity: 1;
+        height: 85px;
+    }
+    82% {
+        height: 85px;
+        opacity: 1
+    }
+    100% {
+        height: 0;
+        opacity: 1;
+    }
+}
+
+@keyframes intro-trick-text {
+    0% {
+        opacity: 0;
+        bottom: -125px;
+    }
+    30% {
+        opacity: 1;
+        bottom: -125px;
+    }
+    80% {
+        bottom: -125px;
+        opacity: 1
+    }
+    100% {
+        bottom: 0px;
+        opacity: 1;
     }
 }
