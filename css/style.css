@@ -191,7 +191,7 @@ nav li:hover {
     opacity: 0;
     bottom: -125px;
     z-index: 10;
-    animation: intro-trick-text 1.6s linear .2s forwards;
+    animation: intro-trick-text 1.6s ease-in-out .2s forwards;
 }
 
 .trick-overflow {
@@ -203,7 +203,7 @@ nav li:hover {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    animation: intro-trick-over 1.5s linear .2s forwards;
+    animation: intro-trick-over 1.5s ease-in-out .2s forwards;
 }
 
 .heading {
@@ -815,7 +815,7 @@ footer p {
         opacity: 0;
         height: 85px;
     }
-    30% {
+    40% {
         opacity: 1;
         height: 85px;
     }
@@ -834,7 +834,7 @@ footer p {
         opacity: 0;
         bottom: -125px;
     }
-    30% {
+    40% {
         opacity: 1;
         bottom: -125px;
     }
