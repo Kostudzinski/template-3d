@@ -740,12 +740,12 @@ footer p {
 @keyframes intro-logo {
     0% {
         opacity: 0;
-        padding-top: 100px;
+        padding-top: 70px;
         width: 30vw;
     }
     30% {
         opacity: 1;
-        padding-top: 100px;
+        padding-top: 70px;
         width: 30vw;
     }
     65% {
