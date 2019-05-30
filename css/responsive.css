@@ -2,6 +2,9 @@
     .container {
         margin: 0 30px;
     }
+    .glow {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 870px) {
