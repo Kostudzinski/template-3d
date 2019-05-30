@@ -191,7 +191,7 @@ nav li:hover {
     opacity: 0;
     bottom: -125px;
     z-index: 10;
-    animation: intro-trick-text 1.6s ease-in-out .2s forwards;
+    animation: intro-trick-text 1.7s ease-in-out .2s forwards;
 }
 
 .trick-overflow {
@@ -203,7 +203,7 @@ nav li:hover {
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
-    animation: intro-trick-over 1.5s ease-in-out .2s forwards;
+    animation: intro-trick-over 1.6s ease-in-out .2s forwards;
 }
 
 .heading {
@@ -485,8 +485,14 @@ nav li:hover {
 
 .list-item {
     transition: .7s;
-    width: 75%;
+    width: 100%;
     cursor: pointer;
+    position: relative;
+    z-index: 11;
+}
+
+.list-item-under {
+    z-index: 9;
 }
 
 .list-item:hover {
@@ -532,6 +538,10 @@ nav li:hover {
     top: 25px;
     right: 10px;
     z-index: 10;
+}
+
+.rotate {
+    transform: rotate(0deg);
     cursor: pointer;
 }
 
@@ -553,6 +563,14 @@ nav li:hover {
 .cross-gray {
     background: #e1e1e1;
     transition: .7s;
+}
+
+.cross-click {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 0;
+    left: -10px;
 }
 
 .desc-text:hover .cross-gray {
