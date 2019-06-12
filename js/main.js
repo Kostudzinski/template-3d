@@ -8,6 +8,7 @@ $(document).ready(function () {
 $(window).scroll(function () {
     navBack();
     //    parallax();
+    line();
 });
 
 function scrollSlow() {
@@ -66,3 +67,10 @@ function hoverPrinter() {
         }
     )
 }
+
+function line() {
+    var scrollBottom = $(window).scrollTop() + $(window).height();
+    if (scrollBottom >= ($(".blue-head-cta").offset().top) + 50) {
+        $('.blue-head-cta').addClass('blue-line-on');
+    }
+};
