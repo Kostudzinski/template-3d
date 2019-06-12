@@ -656,14 +656,14 @@ span {
 #cta img {
     width: 44%;
     position: absolute;
-    left: 47%;
+    left: 49%;
     top: 50%;
     transform: translateY(-50%);
 }
 
 .cta-text {
     position: absolute;
-    left: 12%;
+    left: 10%;
     top: 50%;
     transform: translateY(-50%);
 }
