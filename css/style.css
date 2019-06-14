@@ -49,7 +49,14 @@ nav {
     z-index: 5;
     transition: .7s;
     opacity: 0;
+}
+
+.nav-index{
     animation: intro-nav 1s linear 2.4s forwards;
+}
+
+.nav{
+    animation: intro-nav 1s linear 1.5s forwards;
 }
 
 .nav-back {
@@ -102,6 +109,7 @@ nav li:hover {
 #head-header {
     background-image: linear-gradient(to right, #e1e1e1, #fff, #e1e1e1);
     padding-bottom: 80px;
+    min-height: 100vh;
 }
 
 .head-floor {
@@ -653,6 +661,10 @@ span {
     height: 100%;
 }
 
+#cta p {
+    color: #fff;
+}
+
 #cta img {
     width: 44%;
     position: absolute;
@@ -678,6 +690,10 @@ span {
     border: 2px solid #fff;
     color: #23A1E9;
     margin-top: 25px;
+}
+
+.cta-text .banner-button {
+    margin-top: 50px;
 }
 
 .cta-text button:hover {
@@ -758,6 +774,10 @@ footer {
     padding-bottom: 12px;
 }
 
+#contact-footer {
+    margin-top: 0;
+}
+
 footer .container {
     position: relative;
 }
@@ -765,6 +785,27 @@ footer .container {
 footer span {
     color: #e1e1e1;
     font-size: 14px;
+}
+
+.bottom-info {
+    background: #000;
+}
+
+.container-bottom {
+    padding: 12px;
+    font-size: 12px;
+}
+
+.bottom-info {
+    color: #fff;
+    text-align: center;
+}
+
+.img-footer {
+    width: 25px;
+    padding: 0px 10px 0;
+    position: relative;
+    top: 5px;
 }
 
 footer p {
@@ -780,6 +821,62 @@ footer p {
     bottom: 0;
     right: 0;
     cursor: pointer;
+}
+
+
+/*CONTACTS FORM*/
+
+form {
+    position: relative;
+}
+
+.contacts {
+    margin-top: 90px;
+    flex: 1;
+    padding: 50px;
+}
+
+.contacts h1 {
+    padding-bottom: 10px;
+}
+
+.collage {
+    position: absolute;
+    width: 50vw;
+    right: 50vw;
+}
+
+.contact-info {
+    padding: 10px 25px 20px;
+    display: flex;
+}
+
+.contact-info img {
+    height: 25px;
+    margin-right: 20px;
+}
+
+.mail-contact {
+    padding-top: 0;
+}
+
+.input {
+    width: 100%;
+    height: 35px;
+    border-radius: 30px;
+    text-align: center;
+    background: no-repeat;
+    border: 1px solid #303030;
+    margin-top: 5px;
+    font-size: 16px;
+}
+
+.button-form {
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-top: 15px;
 }
 
 
