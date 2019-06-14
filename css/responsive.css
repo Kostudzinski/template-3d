@@ -1,76 +1,98 @@
-@media screen and (max-width: 970px) {
-    .container {
-        margin: 0 30px;
+    @media screen and (max-width: 970px) {
+        .container {
+            margin: 0 30px;
+        }
+        .glow {
+            display: none;
+        }
     }
-    .glow {
-        display: none;
+    
+    @media screen and (max-width: 870px) {
+        #burger {
+            display: block;
+        }
+        .nav-ul{
+            display: none;
+        }
+        #head .container {
+            display: block;
+            transform: translateY(0%);
+            top: 50px;
+        }
+        .head-con {
+            width: 100%;
+            text-align: center;
+            padding-top: 50px;
+        }
+        .head-floor {
+            display: none;
+        }
+        .head-text-con {
+            position: relative;
+            transform: translateY(0%);
+            top: 0%;
+        }
+        .head-img>img {
+            height: 55vh;
+        }
+        .head-text {
+            padding-left: 0px;
+        }
+        #head {
+            height: 130vh;
+        }
+        .head-text-con>h1 {
+            margin: 10px 0 30px;
+        }
+        .container-flex {
+            display: block;
+        }
+        .feat-text {
+            width: 100%;
+            height: 60vh;
+        }
+        .dim-con {
+            width: 100%;
+            height: 100vh;
+        }
+        .li-img {
+            width: 100%;
+            height: 80vh;
+        }
+        .img-li {
+            background-position: center;
+        }
+        h2 {
+            padding: 30px 0px 0px;
+        }
+        .tech-row {
+            display: block;
+        }
+        .tech-line {
+            top: 30px;
+        }
+        .tech-feature {
+            margin-top: 50px;
+        }
+        .banner-text {
+            width: 100%;
+        }
+        .second-row {
+            margin: 30px 30px;
+        }
+        .contacts {
+            padding: 150px 50px;
+            margin-top: 0;
+        }
+        .collage {
+            position: absolute;
+            width: 60vw;
+            right: 25vw;
+        }
+        #cta img {
+            display: none;
+        }
+        .line-printer-head {
+            display: none;
+        }
     }
-}
-
-@media screen and (max-width: 870px) {
-    #head .container {
-        display: block;
-        transform: translateY(0%);
-        top: 50px;
-    }
-    .head-con {
-        width: 100%;
-        text-align: center;
-    }
-    .head-floor {
-        display: none;
-    }
-    .head-text-con {
-        position: relative;
-        transform: translateY(0%);
-        top: 0%;
-    }
-    .head-img>img {
-        height: 55vh;
-    }
-    .head-text {
-        padding-left: 0px;
-    }
-    #head {
-        height: 130vh;
-    }
-    .head-text-con>h1 {
-        margin: 10px 0 30px;
-    }
-    .container-flex {
-        display: block;
-    }
-    .feat-text {
-        width: 100%;
-        height: 60vh;
-    }
-    .dim-con {
-        width: 100%;
-        height: 100vh;
-    }
-    .li-img {
-        width: 100%;
-        height: 80vh;
-    }
-    .img-li {
-        background-position: center;
-    }
-    h2 {
-        padding: 30px 0px 0px;
-    }
-    .tech-row {
-        display: block;
-    }
-    .tech-line {
-        top: 30px;
-    }
-    .tech-feature {
-        margin-top: 50px;
-    }
-    .banner-text {
-        width: 100%;
-    }
-    .second-row {
-        margin: 30px 30px;
-    }
-}
