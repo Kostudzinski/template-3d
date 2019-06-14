@@ -3,6 +3,7 @@
 $(document).ready(function () {
     changePhoto();
     scrollSlow();
+    burger();
 });
 
 $(window).scroll(function () {
@@ -142,3 +143,13 @@ function showTech() {
         $('.tech-info-2').addClass('tech-on');
     };
 }
+
+ function burger() {
+     $('#burger').click(function () {
+         $('.burger-line:nth-child(2)').toggleClass('transparent');
+         $('.burger-line:nth-child(1)').toggleClass('rotate-top');
+         $('.burger-line:nth-child(3)').toggleClass('rotate-bottom');
+         $('.burger-nav').toggleClass('burger-on');
+
+     });
+ }

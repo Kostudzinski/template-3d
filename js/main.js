@@ -3,6 +3,7 @@
 $(document).ready(function () {
     scrollSlow();
     hoverPrinter();
+    burger();
 });
 
 $(window).scroll(function () {
@@ -74,3 +75,13 @@ function line() {
         $('.blue-head-cta').addClass('blue-line-on');
     }
 };
+
+ function burger() {
+     $('#burger').click(function () {
+         $('.burger-line:nth-child(2)').toggleClass('transparent');
+         $('.burger-line:nth-child(1)').toggleClass('rotate-top');
+         $('.burger-line:nth-child(3)').toggleClass('rotate-bottom');
+         $('.burger-nav').toggleClass('burger-on');
+
+     });
+ }

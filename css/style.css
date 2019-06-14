@@ -51,11 +51,11 @@ nav {
     opacity: 0;
 }
 
-.nav-index{
+.nav-index {
     animation: intro-nav 1s linear 2.4s forwards;
 }
 
-.nav{
+.nav {
     animation: intro-nav 1s linear 1.5s forwards;
 }
 
@@ -96,6 +96,7 @@ nav li:hover {
     color: #23A1E9;
 }
 
+
 /*BURGER*/
 
 #burger {
@@ -131,6 +132,49 @@ nav li:hover {
 
 .burger-line:nth-child(3) {
     top: 24px;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.rotate-top {
+    -webkit-transform: rotatez(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotatez(45deg);
+    -webkit-transform-origin: 0%;
+    left: 2px
+}
+
+.rotate-bottom {
+    -webkit-transform: rotatez(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotatez(-45deg);
+    -webkit-transform-origin: 15%;
+}
+
+.burger-nav {
+    display: none;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: 3;
+    text-align: center;
+}
+
+.burger-nav ul {
+    padding: 0px;
+    margin-top: 100px;
+}
+
+.burger-nav li {
+    padding: 30px;
+    list-style-type: none;
+}
+
+.burger-on {
+    display: block;
 }
 
 
@@ -241,7 +285,7 @@ nav li:hover {
 .trick-text {
     opacity: 0;
     bottom: -125px;
-    z-index: 10;
+    z-index: 1;
     animation: intro-trick-text 1.7s ease-in-out .2s forwards;
 }
 
