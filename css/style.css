@@ -71,7 +71,7 @@ nav>.container {
 .nav-logo {
     width: 190px;
     height: 100%;
-    background-image: url(../img/logo.png);
+    background-image: url(../img/logoE.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -397,11 +397,11 @@ nav li:hover {
 }
 
 .glow-c {
-    animation: glow 7.5s linear 3.8s infinite;
+    animation: glow 7.5s linear 3.5s infinite;
 }
 
 .glow-g {
-    animation: glow 7.5s linear 3.5s infinite;
+    animation: glow 7.5s linear 3.8s infinite;
 }
 
 
@@ -689,6 +689,22 @@ span {
 }
 
 
+/*MOVIE*/
+
+.container-video {
+    text-align: center;
+}
+
+video {
+    /*
+    width: 960px;
+    height: 720px;
+*/
+    width: 100%;
+    margin-top: 30px;
+}
+
+
 /*BANNER*/
 
 #banner {
@@ -851,8 +867,7 @@ footer {
     background-color: #282a2b;
     border-color: #4b4c4d;
     border-top-width: 1px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 15px 0;
 }
 
 #contact-footer {
@@ -887,7 +902,7 @@ footer span {
 }
 
 .img-footer {
-    width: 25px;
+    width: 27px;
     padding: 0px 10px 0;
     position: relative;
     top: 5px;
@@ -895,7 +910,7 @@ footer span {
 
 footer p {
     color: #fff;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .arrow {
@@ -903,7 +918,7 @@ footer p {
     height: 40px;
     background: url(../img/arrow.png);
     position: absolute;
-    bottom: 0;
+    bottom: -9px;
     right: 0;
     cursor: pointer;
 }
@@ -916,7 +931,7 @@ form {
 }
 
 .contacts {
-    margin-top: 90px;
+    margin-top: 70px;
     flex: 1;
     padding: 50px;
 }
@@ -961,7 +976,17 @@ form {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 15px;
+    margin-top: 105px;
+}
+
+
+/*RECAPTCHA*/
+
+.g-recaptcha {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: -90px;
 }
 
 
